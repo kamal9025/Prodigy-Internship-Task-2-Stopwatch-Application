@@ -1,0 +1,77 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('https://cdn.wallpapersafari.com/1/15/fJA57h.png') no-repeat center center fixed; /* Background image */
+    background-size: cover; /* Cover the whole viewport */
+    color: #fff;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+}
+
+.stopwatch {
+    position: relative; /* Positioning for the stopwatch */
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7); /* Darker background for contrast */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    transition: background 0.3s ease;
+}
+
+.stopwatch h1 {
+    font-size: 48px;
+    margin: 0;
+    animation: fadeIn 1s ease;
+}
+
+.time {
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background: #3d5afe; /* Button color */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #2c6dfd; /* Darker blue on hover */
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
